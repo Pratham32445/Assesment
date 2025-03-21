@@ -714,9 +714,6 @@ body {
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -736,6 +733,7 @@ body {
 
 .footer-links {
   display: flex;
+  margin-top: 20px;
   gap: 60px;
   flex-wrap: wrap;
 }
