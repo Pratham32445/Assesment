@@ -948,9 +948,6 @@ body {
   .stat p {
     font-size: 1rem;
   }
-  .container {
-    flex-wrap: wrap;
-  }
 
   .elips {
     width: 60px;
@@ -1065,6 +1062,14 @@ body {
     padding: 40px 5%;
   }
 
+  .container {
+    flex-wrap: wrap;
+  }
+  
+  .scroll-progress {
+    display: none;
+  }
+
   .left-content {
     width: 100%;
     max-width: 100%;
@@ -1102,9 +1107,6 @@ body {
     justify-content: center;
   }
 
-  .container {
-    display: block;
-  }
 
   .elips {
     width: 40px;
