@@ -922,6 +922,10 @@ body {
     font-size: 0.9rem;
   }
 
+  .logo img {
+    width: 150px;
+  }
+
   .cta-btn,
   .btnn {
     padding: 10px 20px;
@@ -1063,9 +1067,9 @@ body {
   }
 
   .container {
-    flex-wrap: wrap;
+    display: block;
   }
-  
+
   .scroll-progress {
     display: none;
   }
