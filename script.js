@@ -5,7 +5,6 @@ const darkModeToggle = document.getElementById("dark-mode-toggle");
 const closeMenu = document.querySelector(".close-mobile-menu");
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide");
   const dots = document.querySelectorAll(".dot");
