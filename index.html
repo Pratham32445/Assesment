@@ -24,15 +24,15 @@
           <span class="hamburger-bar"></span>
         </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links flex items-center">
           <li>
             <a href="#"
-              >Solutions <img style="width: 30px;color: white;" src="./assets/dropdown.svg" alt="" />
+              >Solutions <img src="./down-arrow.png" style="width: 30px" />
             </a>
           </li>
           <li>
             <a href="#"
-              >Resources <img style="width: 30px" src="./assets/dropdown.svg" alt="" />
+              >Resources <img src="./down-arrow.png" style="width: 30px" />
             </a>
           </li>
           <li><a href="#">About Us</a></li>
@@ -178,50 +178,55 @@
     <div class="super-container opacity-0 animate-fade-up">
       <h1><strong>Learn more about</strong> <span>what we solve</span></h1>
 
-      <div class="container">
-        <div class="container-child">
-          <div class="card">
-            <img src="./assets/icon1.png" alt="Accreditation" />
-            <h2>Accreditation & Compliance</h2>
-            <p>
-              Bring real-time monitoring for all users’ accreditation
-              requirements for continuous quality improvement.
-            </p>
-            <a href="#" class="btn">Learn More</a>
+      <div class="container-wrapper">
+        <div class="container" id="scrollContainer">
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon1.png" alt="Accreditation" />
+              <h2>Accreditation & Compliance</h2>
+              <p>
+                Bring real-time monitoring for all users’ accreditation
+                requirements for continuous quality improvement.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
           </div>
-        </div>
-        <div class="container-child">
-          <div class="card">
-            <img src="./assets/icon2.png" alt="ILMS" />
-            <h2>ILMS</h2>
-            <p>
-              Customize the learning system by giving users a unified platform
-              for all academic needs with easy-to-use technology.
-            </p>
-            <a href="#" class="btn">Learn More</a>
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon2.png" alt="ILMS" />
+              <h2>ILMS</h2>
+              <p>
+                Customize the learning system by giving users a unified platform
+                for all academic needs with easy-to-use technology.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
           </div>
-        </div>
 
-        <div class="container-child">
-          <div class="card">
-            <img src="./assets/icon3.png" alt="Exam Management" />
-            <h2>Exam Management</h2>
-            <p>
-              Streamline the examination process with Live Proctoring and
-              Automated Examinations.
-            </p>
-            <a href="#" class="btn">Learn More</a>
+          <div class="container-child">
+            <div class="card">
+              <img src="./assets/icon3.png" alt="Exam Management" />
+              <h2>Exam Management</h2>
+              <p>
+                Streamline the examination process with Live Proctoring and
+                Automated Examinations.
+              </p>
+              <a href="#" class="btn">Learn More</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="progress-bar"></div>
-    <div>
-      <img class="elips" src="./assets/Ellipse 6.png" alt="" />
+    <div class="scroll-progress">
+      <div class="scroll-bar" id="scrollBar"></div>
     </div>
+
     <div class="section-container opacity-0 animate-fade-up">
       <!-- Left Content -->
+      <div>
+        <img class="elips" src="./assets/Ellipse 6.png" alt="" />
+      </div>
       <div class="left-content">
         <h1>
           Why your <br />
@@ -263,9 +268,9 @@
           <p>Integration with your campus website</p>
         </div>
       </div>
-    </div>
-    <div>
-      <img class="elips2" src="./assets/Ellipse 6 (1).png" alt="" />
+      <div>
+        <img class="elips2" src="./assets/Ellipse 6 (1).png" alt="" />
+      </div>
     </div>
 
     <!--new section-->
@@ -293,14 +298,19 @@
         </div>
       </div>
       <div class="logos">
-        <marquee>
+        <div class="logos-container">
+          <!-- First set of logos -->
           <div class="flex spacing">
             <img
               class="logo"
               src="./assets/bennet-remove.png"
               alt="Bennett University"
             />
-            <img class="logo" src="./assets/iit.png" alt="Jadavpur University" />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
             <img
               class="logo"
               src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
@@ -311,14 +321,52 @@
               src="./assets/bennet-remove.png"
               alt="Bennett University"
             />
-            <img class="logo" src="./assets/iit.png" alt="Jadavpur University" />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
             <img
               class="logo"
               src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
               alt="NUJS"
             />
           </div>
-        </marquee>
+
+          <!-- Duplicate set for seamless scrolling -->
+          <div class="flex spacing">
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+            <img
+              class="logo"
+              src="./assets/bennet-remove.png"
+              alt="Bennett University"
+            />
+            <img
+              class="logo"
+              src="./assets/iit.png"
+              alt="Jadavpur University"
+            />
+            <img
+              class="logo"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a7/West_Bengal_National_University_of_Juridical_Sciences_Logo.svg"
+              alt="NUJS"
+            />
+          </div>
+        </div>  
       </div>
     </section>
 
@@ -369,8 +417,12 @@
           <div class="footer-column">
             <p class="head">Chat with us</p>
             <div class="social-icons">
-              <a href="#"><img src="./assets/facebook 1.png" alt="Facebook" /></a>
-              <a href="#"><img src="./assets/instagram 1.png" alt="Instagram" /></a>
+              <a href="#"
+                ><img src="./assets/facebook 1.png" alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img src="./assets/instagram 1.png" alt="Instagram"
+              /></a>
               <a href="#"><img src="./assets/twitter 1.png" alt="Twitter" /></a>
               <a href=""> <img src="./assets/linkedin.png" alt="linkedin" /></a>
             </div>

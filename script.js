@@ -88,6 +88,18 @@ closeMenu.addEventListener("click", () => {
 });
 
 
+const scrollContainer = document.getElementById("scrollContainer");
+const scrollBar = document.getElementById("scrollBar");
+
+scrollContainer.addEventListener("scroll", () => {
+  const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+  const scrollLeft = scrollContainer.scrollLeft;
+  const scrollPercent = (scrollLeft / scrollWidth) * 100;
+  
+  scrollBar.style.width = scrollPercent + "%";
+});
+
+
 function ManageModeIcon() {
   const theme = localStorage.getItem("theme");
   const img = document.createElement("img");
