@@ -1254,3 +1254,12 @@ body {
   animation: fadeUp 0.8s ease-out forwards;
   animation-delay: 800ms;
 }
+
+
+body.dark-mode img[src="./down-arrow.png"] {
+  filter: brightness(0) invert(1);
+}
+
+img[src="./down-arrow.png"] {
+  transition: filter 0.3s ease;
+}
