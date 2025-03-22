@@ -93,19 +93,19 @@ const scrollBar = document.getElementById("scrollBar");
 
 scrollContainer.addEventListener("scroll", () => {
   const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+  if (scrollWidth === 0) return;
   const scrollLeft = scrollContainer.scrollLeft;
-  const scrollPercent = (scrollLeft / scrollWidth) * 100;
-  
-  scrollBar.style.width = scrollPercent + "%";
+  const scrollPercent = (scrollLeft / scrollWidth) * 100;  
+  scrollBar.style.transform = `translateX(${scrollPercent}%)`;
 });
 
 
 function ManageModeIcon() {
   const theme = localStorage.getItem("theme");
   const img = document.createElement("img");
-  if(theme == "dark") img.src = "./assets/sun.png";
+  if(theme == "dark") {img.src = "./assets/sun2.svg"; img.style.background="#121212"}
   else img.src = "./assets/moon.png";
-  img.style.width = "20px";
+  img.style.width = "25px";
   darkModeToggle.replaceChildren(img);
 } 
 
